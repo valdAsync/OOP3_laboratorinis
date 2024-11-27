@@ -1,0 +1,18 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "MSVC",
+	"compiler-id" : "MSVC",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "C:/Users/valdas.c/personal/tech/trecias_laboratorinis/cmake-build-debug",
+	"dir-cur-src" : "C:/Users/valdas.c/personal/tech/trecias_laboratorinis",
+	"dir-top-bld" : "C:/Users/valdas.c/personal/tech/trecias_laboratorinis/cmake-build-debug",
+	"dir-top-src" : "C:/Users/valdas.c/personal/tech/trecias_laboratorinis",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/valdas.c/personal/tech/trecias_laboratorinis/cmake-build-debug/CMakeFiles/trecias_laboratorinis.dir"
+}

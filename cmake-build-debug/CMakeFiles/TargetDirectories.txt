@@ -1,0 +1,3 @@
+C:/Users/valdas.c/personal/tech/trecias_laboratorinis/cmake-build-debug/CMakeFiles/trecias_laboratorinis.dir
+C:/Users/valdas.c/personal/tech/trecias_laboratorinis/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/valdas.c/personal/tech/trecias_laboratorinis/cmake-build-debug/CMakeFiles/rebuild_cache.dir
