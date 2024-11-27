@@ -21,10 +21,10 @@ public:
     virtual ~Vehicle() = default;
 
     virtual void printVehicleInformation() {
-        cout << "Vehicle Type" << vehicleType << endl;
+        cout << "Vehicle Type: " << vehicleType << endl;
         cout << "Rent Price: " << rentPrice << endl;
         cout << "Engine Type: " << engineType << endl;
-        cout << "Color:" << color << endl;
+        cout << "Color: " << color << endl;
     }
 
     virtual void startVehicle() {}
