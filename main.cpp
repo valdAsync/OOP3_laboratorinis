@@ -5,7 +5,7 @@ using namespace std;
 
 /* Base abstract class to represent vehicle data
  * The class serves as a general representation of a vehicle.
- * The class includes attributes and all the vehicles share.
+ * The class includes attributes that all the vehicles share.
  * The class contains virtual methods which makes it polymorphic, these methods are latter overridden by derived classes.
  * The class includes pure virtual method startVehicle()
  *
