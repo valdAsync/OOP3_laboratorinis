@@ -4,6 +4,15 @@
 using namespace std;
 
 /* Base abstract class to represent vehicle data
+ * The class serves as a general representation of a vehicle.
+ * The class includes attributes and all the vehicles share.
+ * The class contains virtual methods which makes it polymorphic, these methods are latter overridden by derived classes.
+ * The class includes pure virtual method startVehicle()
+ *
+ * Why abstract classes are needed:
+ * - It defines a general structure of an entity that all derived classes follow
+ * - It enforces consistency in derived classes
+ * - It cannot be instantiated and act as blueprints for derived classes.
  *
  */
 class Vehicle {
@@ -18,7 +27,7 @@ public:
         rentPrice(rentPrice), engineType(engineType), color(color) {
     };
 
-    virtual ~Vehicle() = default;
+    virtual ~Vehicle() = default; // virtual destructor destroys objects in derived classes
 
     virtual void printVehicleInformation() {
         cout << "Vehicle Type: " << vehicleType << endl;
@@ -27,7 +36,9 @@ public:
         cout << "Color: " << color << endl;
     }
 
-    virtual void startVehicle() {}
+    virtual void startVehicle() {
+        // must be implemented in derived classes
+    }
 };
 
 /* Derived class to represent car data
@@ -80,21 +91,21 @@ public:
 };
 
 int main() {
-    Vehicle* vehiclePtr = nullptr;
+    Vehicle *vehiclePtr = nullptr; // Base class pointer
 
     Car car("SUV", 350, "Petrol", "Blue", true, 4);
     vehiclePtr = &car;
 
     cout << "Details of Car:" << endl;
-    vehiclePtr->printVehicleInformation();  // Calls Car's method
-    vehiclePtr->startVehicle();             // Calls Car's method
+    vehiclePtr->printVehicleInformation(); // Calls Car's method
+    vehiclePtr->startVehicle(); // Calls Car's method
 
     Motorcycle motorcycle("Dirt bike", 500, "Electrical", "Black", true);
     vehiclePtr = &motorcycle;
 
     cout << "\nDetails of Motorcycle:" << endl;
-    vehiclePtr->printVehicleInformation();  // Calls Motorcycle's method
-    vehiclePtr->startVehicle();             // Calls Motorcycle's method
+    vehiclePtr->printVehicleInformation(); // Calls Motorcycle's method
+    vehiclePtr->startVehicle(); // Calls Motorcycle's method
 
     return 0;
 }
